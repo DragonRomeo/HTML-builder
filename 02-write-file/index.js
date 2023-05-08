@@ -26,4 +26,9 @@ rl.on("line", (input) => {
   
 });
 
+rl.on('SIGINT', () => {
+  console.log('Доброго дня');
+  rl.close();
+})
+
 
